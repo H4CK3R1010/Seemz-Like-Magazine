@@ -1,39 +1,68 @@
 import Link from "next/link";
 
-const people = [
-  "Zoe",
-  "Maddox",
-  "Sophia",
-  "Evan",
-  "Zak",
-  "Evelyn",
-  "Max",
-  "Elliot",
+export default function Home(){
+
+const people=[
+"zoe",
+"maddox",
+"sophia",
+"evan",
+"zak",
+"evelyn",
+"max",
+"elliot"
 ];
 
-export default function Home() {
-  return (
-    <main className="home">
-      <section className="hero">
-        <h1>Seemz Like...</h1>
-        <h2>For kids, By kids</h2>
-      </section>
 
-      <section className="people">
-        <h3>Meet the creators</h3>
+return(
+<div className="background">
 
-        <div className="buttons">
-          {people.map((person) => (
-            <Link
-              key={person}
-              href={`/${person.toLowerCase()}`}
-              className="personButton"
-            >
-              {person}
-            </Link>
-          ))}
-        </div>
-      </section>
-    </main>
-  );
+<div className="title">
+Seemz Like...
+</div>
+
+<div className="subtitle">
+For kids, By kids
+</div>
+
+
+<div style={{textAlign:"center", marginTop:200}}>
+
+{people.map((person)=>(
+<Link
+className="card"
+href={`/people/${person}`}
+key={person}
+>
+{person}
+</Link>
+))}
+
+</div>
+
+
+<div style={{textAlign:"center",marginTop:100}}>
+
+<Link className="card" href="/timeline">
+Timeline
+</Link>
+
+<Link className="card" href="/pricing">
+Pricing
+</Link>
+
+<Link className="card" href="/topics">
+Topics
+</Link>
+
+<Link className="card" href="/goals">
+Goals
+</Link>
+
+</div>
+
+
+</div>
+)
+
 }
