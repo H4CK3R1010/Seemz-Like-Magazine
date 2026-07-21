@@ -3,41 +3,318 @@
 @tailwind utilities;
 
 
+/* GENERAL WEBSITE SETTINGS */
+
 body {
-  margin:0;
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 
+/* HOME + PEOPLE PAGE BACKGROUND */
+
 .background {
-  min-height:100vh;
-  background-image:url("/background.jpg");
-  background-size:cover;
-  background-position:center;
-  color:white;
+
+  min-height: 100vh;
+
+  background-image: url("/background.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-attachment: fixed;
+
+  color: white;
+
+  padding-top: 80px;
+
 }
 
 
-.card {
-  background:white;
-  color:#4169e1;
-  padding:20px;
-  border-radius:20px;
-  font-size:25px;
-  text-decoration:none;
-  margin:15px;
-  display:inline-block;
+
+/* NAVIGATION */
+
+nav {
+
+  position: fixed;
+
+  top: 0;
+
+  right: 20px;
+
+  padding: 20px;
+
+  z-index: 100;
+
+  font-size: 22px;
+
 }
 
+
+nav a {
+
+  color: white;
+
+  text-decoration: none;
+
+  margin-left: 15px;
+
+  font-weight: bold;
+
+}
+
+
+nav a:hover {
+
+  text-decoration: underline;
+
+}
+
+
+
+/* HOME TITLE */
 
 .title {
-  font-size:90px;
-  text-align:center;
-  padding-top:180px;
+
+  font-size: 90px;
+
+  text-align: center;
+
+  padding-top: 150px;
+
+  font-weight: bold;
+
 }
+
 
 
 .subtitle {
-  text-align:center;
-  font-size:40px;
+
+  text-align: center;
+
+  font-size: 45px;
+
+}
+
+
+
+/* BUTTONS */
+
+.card {
+
+  background: white;
+
+  color: #4169e1;
+
+  padding: 20px 35px;
+
+  border-radius: 25px;
+
+  font-size: 30px;
+
+  text-decoration: none;
+
+  margin: 15px;
+
+  display: inline-block;
+
+  font-weight: bold;
+
+}
+
+
+.card:hover {
+
+  transform: scale(1.05);
+
+}
+
+
+
+/* SLIDESHOW STYLE PAGES */
+/* Timeline, Pricing, Topics */
+
+
+.slideBackground {
+
+  min-height: 100vh;
+
+  background-image: url("/slide-background.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  padding: 80px 50px;
+
+  color: #5876c9;
+
+}
+
+
+
+.slideTitle {
+
+  font-size: 75px;
+
+  text-align: center;
+
+  font-weight: bold;
+
+}
+
+
+
+/* TIMELINE */
+
+.timeline {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 40px;
+
+  margin-top: 100px;
+
+}
+
+
+
+.event {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  font-size: 25px;
+
+}
+
+
+
+.event h2 {
+
+  font-size: 60px;
+
+  color: #5876c9;
+
+}
+
+
+
+.event h3 {
+
+  color: #d94b9b;
+
+  font-size: 35px;
+
+}
+
+
+
+/* PRICING */
+
+.pricing {
+
+  text-align: center;
+
+  font-size: 30px;
+
+  max-width: 900px;
+
+  margin: auto;
+
+}
+
+
+.pricing h2 {
+
+  color: #d94b9b;
+
+  font-size: 45px;
+
+}
+
+
+
+/* TOPICS PAGE */
+
+
+.topics {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+
+  max-width: 1300px;
+
+  margin: auto;
+
+}
+
+
+
+.topicBox {
+
+  border: 2px solid gray;
+
+  background: rgba(255,255,255,.8);
+
+  padding: 25px;
+
+  color: #5876c9;
+
+}
+
+
+
+.topicBox h2 {
+
+  color: #d94b9b;
+
+  font-size: 35px;
+
+}
+
+
+
+/* GOALS */
+
+
+.goals {
+
+  max-width: 1000px;
+
+  margin: auto;
+
+  font-size: 30px;
+
+}
+
+
+
+.goals h2 {
+
+  color: #d94b9b;
+
+  font-size: 45px;
+
+}
+
+
+.goals p {
+
+  margin-bottom: 50px;
+
 }
