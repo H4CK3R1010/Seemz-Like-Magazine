@@ -2,99 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
 
 body {
-  margin: 0;
+  margin:0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.home {
-  min-height: 100vh;
-  color: white;
-  background:
-    radial-gradient(circle at 20% 20%, #ff4d6d, transparent 30%),
-    radial-gradient(circle at 80% 30%, #00f5d4, transparent 35%),
-    radial-gradient(circle at 40% 80%, #ffd166, transparent 35%),
-    radial-gradient(circle at 90% 90%, #9b5de5, transparent 30%),
-    linear-gradient(120deg, #ff006e, #3a86ff);
-
-  padding-bottom: 100px;
+.background {
+  min-height:100vh;
+  background-image:url("/background.jpg");
+  background-size:cover;
+  background-position:center;
+  color:white;
 }
 
 
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.card {
+  background:white;
+  color:#4169e1;
+  padding:20px;
+  border-radius:20px;
+  font-size:25px;
+  text-decoration:none;
+  margin:15px;
+  display:inline-block;
 }
 
 
-.hero h1 {
-  font-size: 90px;
-  margin: 0;
-  font-weight: 900;
-  letter-spacing: -4px;
+.title {
+  font-size:90px;
+  text-align:center;
+  padding-top:180px;
 }
 
 
-.hero h2 {
-  font-size: 35px;
-  margin-top: 20px;
-}
-
-
-.people {
-  text-align: center;
-  padding: 50px;
-}
-
-
-.people h3 {
-  font-size: 40px;
-}
-
-
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-  max-width: 900px;
-  margin: auto;
-}
-
-
-.personButton {
-  background: rgba(255,255,255,0.2);
-  backdrop-filter: blur(10px);
-  padding: 25px;
-  border-radius: 25px;
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: bold;
-  transition: .3s;
-}
-
-
-.personButton:hover {
-  transform: scale(1.1);
-  background: rgba(255,255,255,0.35);
-}
-
-
-@media(max-width:800px){
-  .buttons{
-    grid-template-columns: repeat(2,1fr);
-  }
-
-  .hero h1{
-    font-size:55px;
-  }
+.subtitle {
+  text-align:center;
+  font-size:40px;
 }
