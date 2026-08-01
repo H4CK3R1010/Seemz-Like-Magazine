@@ -1,17 +1,23 @@
 export default function Zak(){
 
 return(
-<div className="background">
 
-<h1 className="title">
+<div className="peopleBackground">
+
+<div className="peopleBox">
+
+<h1>
 Hi I'm Zak
 </h1>
 
-<h2 className="subtitle">
-Website Manager, Author
-</h2>
+<p>
+Coming soon...
+</p>
 
 </div>
+
+</div>
+
 )
 
 }
