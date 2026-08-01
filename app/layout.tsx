@@ -2,35 +2,52 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 
+
 export const metadata: Metadata = {
+
   title: "Seemz Like...",
-  description: "For kids, By kids.",
+
+  description: "For kids, By kids."
+
 };
 
+
+
 export default function RootLayout({
+
   children,
+
 }: {
+
   children: React.ReactNode;
+
 }) {
-  return (
-    <html lang="en">
-      <body>
 
-        <nav>
 
-          <Link href="/">Home</Link>
+return (
 
-          <Link href="/timeline">Timeline</Link>
+<html lang="en">
 
-          <Link href="/pricing">Pricing</Link>
+<body>
 
-          <Link href="/goals">Goals</Link>
 
-        </nav>
+<nav>
 
-        <main>{children}</main>
+<Link href="/">
+Home
+</Link>
 
-      </body>
-    </html>
-  );
+
+</nav>
+
+
+{children}
+
+
+</body>
+
+</html>
+
+);
+
 }
