@@ -2,49 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* GENERAL */
+/* ---------------- GENERAL ---------------- */
 
 * {
   box-sizing: border-box;
 }
 
-
 body {
-
   margin: 0;
-
   padding: 0;
-
   font-family: Arial, Helvetica, sans-serif;
-
-  background: white;
-
 }
 
-
-
-/* MAIN PAGE */
+/* ---------------- BACKGROUND ---------------- */
 
 .background {
-
   min-height: 100vh;
 
-  background: white;
+  background-image: url("/background.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
 
   color: black;
 
   padding-top: 80px;
-
 }
 
-
-
-/* NAVIGATION */
-
+/* ---------------- NAVIGATION ---------------- */
 
 nav {
-
   position: fixed;
 
   top: 20px;
@@ -52,13 +44,9 @@ nav {
   right: 25px;
 
   z-index: 1000;
-
 }
 
-
-
 nav a {
-
   color: black;
 
   text-decoration: none;
@@ -68,23 +56,15 @@ nav a {
   font-size: 20px;
 
   margin-left: 20px;
-
 }
-
 
 nav a:hover {
-
   color: royalblue;
-
 }
 
-
-
-/* TITLES */
-
+/* ---------------- TITLES ---------------- */
 
 .title {
-
   font-size: 90px;
 
   text-align: center;
@@ -93,37 +73,33 @@ nav a:hover {
 
   color: black;
 
+  margin-bottom: 15px;
 }
 
-
 .subtitle {
-
   text-align: center;
 
-  font-size: 45px;
+  font-size: 42px;
 
   font-weight: bold;
 
   color: black;
-
 }
 
-
-
-/* BUTTONS */
-
+/* ---------------- BUTTONS ---------------- */
 
 .card {
-
   display: inline-block;
 
   margin: 15px;
 
   padding: 20px 35px;
 
+  background: rgba(255,255,255,.9);
+
   border-radius: 20px;
 
-  background: #eeeeee;
+  text-decoration: none;
 
   color: black;
 
@@ -131,33 +107,23 @@ nav a:hover {
 
   font-weight: bold;
 
-  text-decoration: none;
-
   transition: .2s;
 
+  box-shadow: 0 6px 15px rgba(0,0,0,.15);
 }
-
-
 
 .card:hover {
-
   transform: scale(1.05);
 
-  background: #dddddd;
-
+  background: white;
 }
 
-
-
-/* PERSON PAGE TEXT */
-
+/* ---------------- PERSON PAGE ---------------- */
 
 .personRole {
-
   text-align: center;
 
   font-size: 35px;
 
   color: black;
-
 }
