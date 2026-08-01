@@ -2,21 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ---------------- GENERAL ---------------- */
+
+/* =========================
+   GENERAL SETTINGS
+========================= */
+
 
 * {
   box-sizing: border-box;
 }
 
+
 body {
+
   margin: 0;
+
   padding: 0;
+
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
-/* ---------------- BACKGROUND ---------------- */
+
+
+/* =========================
+   HOMEPAGE BACKGROUND
+========================= */
+
 
 .background {
+
   min-height: 100vh;
 
   background-image: url("/background.jpg");
@@ -32,51 +47,63 @@ body {
   color: black;
 
   padding-top: 80px;
+
 }
 
-/* ---------------- NAVIGATION ---------------- */
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
 
 nav {
 
-position: fixed;
+  position: fixed;
 
-top: 0;
+  top: 20px;
 
-right: 30px;
+  right: 30px;
 
-padding: 25px;
+  z-index: 1000;
 
-z-index: 100;
+  display: flex;
 
-font-size: 22px;
-
-display: flex;
-
-gap: 25px;
+  gap: 25px;
 
 }
+
 
 
 nav a {
 
-color: black;
+  color: black;
 
-text-decoration: none;
+  text-decoration: none;
 
-font-weight: bold;
+  font-size: 22px;
+
+  font-weight: bold;
 
 }
+
 
 
 nav a:hover {
 
-text-decoration: underline;
+  color: royalblue;
 
 }
 
-/* ---------------- TITLES ---------------- */
+
+
+/* =========================
+   HOMEPAGE TITLE
+========================= */
+
 
 .title {
+
   font-size: 90px;
 
   text-align: center;
@@ -85,57 +112,189 @@ text-decoration: underline;
 
   color: black;
 
-  margin-bottom: 15px;
 }
 
+
+
 .subtitle {
+
   text-align: center;
 
-  font-size: 42px;
+  font-size: 45px;
 
   font-weight: bold;
 
   color: black;
+
 }
 
-/* ---------------- BUTTONS ---------------- */
+
+
+/* =========================
+   BUTTONS
+========================= */
+
 
 .card {
+
   display: inline-block;
 
   margin: 15px;
 
   padding: 20px 35px;
 
-  background: rgba(255,255,255,.9);
+  background: white;
 
   border-radius: 20px;
 
-  text-decoration: none;
-
   color: black;
+
+  text-decoration: none;
 
   font-size: 28px;
 
   font-weight: bold;
 
+  box-shadow: 0 5px 15px rgba(0,0,0,.15);
+
   transition: .2s;
 
-  box-shadow: 0 6px 15px rgba(0,0,0,.15);
 }
+
+
 
 .card:hover {
+
   transform: scale(1.05);
 
-  background: white;
+  background: #eeeeee;
+
 }
 
-/* ---------------- PERSON PAGE ---------------- */
 
-.personRole {
+
+/* =========================
+   OTHER PAGES
+   (About, Pricing,
+   Donate, Contact)
+========================= */
+
+
+.pageBox {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
   text-align: center;
 
-  font-size: 35px;
+}
+
+
+
+.pageBox h1 {
+
+  font-size: 80px;
+
+  font-weight: bold;
 
   color: black;
+
+}
+
+
+
+.pageBox p {
+
+  font-size: 40px;
+
+  color: black;
+
+}
+
+
+
+.pageBox a {
+
+  color: blue;
+
+  text-decoration: underline;
+
+}
+
+
+
+/* =========================
+   PEOPLE PAGES
+========================= */
+
+
+.peopleBackground {
+
+  min-height: 100vh;
+
+  background-image: url("/people-background.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  color: black;
+
+  padding-top: 80px;
+
+}
+
+
+
+.peopleBox {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+}
+
+
+
+.peopleBox h1 {
+
+  font-size: 90px;
+
+  font-weight: bold;
+
+  color: black;
+
+  margin: 0;
+
+}
+
+
+
+.peopleBox p {
+
+  font-size: 40px;
+
+  color: black;
+
+  margin-top: 30px;
+
 }
