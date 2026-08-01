@@ -18,31 +18,17 @@ export default function RootLayout({
 
         <nav>
 
-          <Link href="/">
-            Home
-          </Link>
+          <Link href="/">Home</Link>
 
-          <Link href="/timeline">
-            Timeline
-          </Link>
+          <Link href="/timeline">Timeline</Link>
 
-          <Link href="/pricing">
-            Pricing
-          </Link>
+          <Link href="/pricing">Pricing</Link>
 
-          <Link href="/topics">
-            Topics
-          </Link>
-
-          <Link href="/goals">
-            Goals
-          </Link>
+          <Link href="/goals">Goals</Link>
 
         </nav>
 
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
 
       </body>
     </html>
