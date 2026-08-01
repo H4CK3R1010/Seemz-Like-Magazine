@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* -------------------- */
-/* GENERAL SETTINGS */
-/* -------------------- */
+/* ---------------- GENERAL ---------------- */
 
 * {
   box-sizing: border-box;
@@ -16,9 +14,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* -------------------- */
-/* BACKGROUNDS */
-/* -------------------- */
+/* ---------------- BACKGROUNDS ---------------- */
 
 .background {
   min-height: 100vh;
@@ -40,28 +36,28 @@ body {
   padding: 90px 40px;
 }
 
-/* -------------------- */
-/* NAVIGATION */
-/* -------------------- */
+/* ---------------- NAVIGATION ---------------- */
 
 nav {
   position: fixed;
-  top: 15px;
-  right: 25px;
-  z-index: 1000;
+  top: 20px;
+  right: 20px;
 
   background: rgba(255,255,255,.75);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
-  padding: 12px 20px;
-  border-radius: 18px;
+  padding: 15px 25px;
+  border-radius: 20px;
+
+  z-index: 1000;
 }
 
 nav a {
   color: black;
   text-decoration: none;
-  margin-left: 18px;
   font-weight: bold;
+  margin-left: 18px;
   transition: .2s;
 }
 
@@ -69,36 +65,28 @@ nav a:hover {
   color: royalblue;
 }
 
-/* -------------------- */
-/* GLASS TEXT BOX */
-/* -------------------- */
+/* ---------------- GLASS BOX ---------------- */
 
 .textBox {
+  display: inline-block;
 
-  background: rgba(255,255,255,.72);
+  background: rgba(255,255,255,.75);
 
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 
-  border-radius: 25px;
-
   padding: 30px;
 
-  width: fit-content;
+  border-radius: 25px;
 
-  margin: auto;
-
-  box-shadow: 0 10px 30px rgba(0,0,0,.20);
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
 }
 
-/* -------------------- */
-/* HOME PAGE */
-/* -------------------- */
+/* ---------------- HOME PAGE ---------------- */
 
 .title {
   font-size: 90px;
   text-align: center;
-  font-weight: bold;
   color: black;
   margin: 0;
 }
@@ -106,209 +94,135 @@ nav a:hover {
 .subtitle {
   text-align: center;
   font-size: 42px;
-  font-weight: bold;
   color: black;
   margin-top: 15px;
+  font-weight: bold;
 }
 
-/* -------------------- */
-/* BUTTONS */
-/* -------------------- */
+/* ---------------- BUTTONS ---------------- */
 
 .card {
+  display: inline-block;
+
+  margin: 15px;
+
+  padding: 18px 35px;
+
+  border-radius: 20px;
+
+  text-decoration: none;
+
   background: rgba(255,255,255,.85);
 
   color: #4169e1;
 
-  padding: 20px 35px;
-
-  border-radius: 20px;
-
   font-size: 28px;
-
-  text-decoration: none;
-
-  margin: 15px;
-
-  display: inline-block;
 
   font-weight: bold;
 
   transition: .25s;
 
-  box-shadow: 0 6px 15px rgba(0,0,0,.18);
+  box-shadow: 0 6px 18px rgba(0,0,0,.18);
 }
 
 .card:hover {
-
-  transform: scale(1.05);
-
   background: white;
-
+  transform: scale(1.05);
 }
 
-/* -------------------- */
-/* PAGE TITLES */
-/* -------------------- */
+/* ---------------- PAGE TITLES ---------------- */
 
 .slideTitle {
-
   font-size: 70px;
-
   text-align: center;
-
   color: black;
-
-  font-weight: bold;
-
+  margin-bottom: 60px;
 }
 
-/* -------------------- */
-/* TIMELINE */
-/* -------------------- */
+/* ---------------- TIMELINE ---------------- */
 
 .timeline {
-
   display: flex;
-
   justify-content: center;
-
-  gap: 35px;
-
-  margin-top: 70px;
-
   flex-wrap: wrap;
-
+  gap: 35px;
 }
 
 .event {
+  width: 250px;
 
   background: rgba(255,255,255,.85);
 
-  padding: 25px;
-
   border-radius: 20px;
 
-  width: 250px;
+  padding: 25px;
 
   text-align: center;
 
+  box-shadow: 0 6px 18px rgba(0,0,0,.18);
 }
 
 .event h2 {
-
   font-size: 55px;
-
   color: #5876c9;
-
-  margin-bottom: 5px;
-
+  margin: 0;
 }
 
 .event h3 {
-
   color: #d94b9b;
-
   font-size: 32px;
-
 }
 
-/* -------------------- */
-/* PRICING */
-/* -------------------- */
+/* ---------------- PRICING ---------------- */
 
 .pricing {
-
   max-width: 900px;
 
   margin: auto;
 
   text-align: center;
 
-  background: rgba(255,255,255,.72);
+  background: rgba(255,255,255,.75);
 
   backdrop-filter: blur(8px);
 
-  padding: 40px;
-
   border-radius: 25px;
 
+  padding: 40px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,.18);
 }
 
 .pricing h2 {
-
   color: #d94b9b;
-
   font-size: 42px;
-
 }
 
-/* -------------------- */
-/* TOPICS */
-/* -------------------- */
-
-.topics {
-
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-
-  gap: 20px;
-
-  margin-top: 40px;
-
-}
-
-.topicBox {
-
-  background: rgba(255,255,255,.80);
-
-  border-radius: 20px;
-
-  padding: 20px;
-
-  color: #5876c9;
-
-}
-
-.topicBox h2 {
-
-  color: #d94b9b;
-
-}
-
-/* -------------------- */
-/* GOALS */
-/* -------------------- */
+/* ---------------- GOALS ---------------- */
 
 .goals {
-
   max-width: 900px;
 
   margin: auto;
 
-  background: rgba(255,255,255,.72);
+  background: rgba(255,255,255,.75);
 
   backdrop-filter: blur(8px);
 
-  padding: 40px;
-
   border-radius: 25px;
+
+  padding: 40px;
 
   font-size: 28px;
 
+  box-shadow: 0 6px 18px rgba(0,0,0,.18);
 }
 
 .goals h2 {
-
   color: #d94b9b;
-
   font-size: 42px;
-
 }
 
 .goals p {
-
   margin-bottom: 45px;
-
 }
