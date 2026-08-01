@@ -1,17 +1,23 @@
 export default function Zoe(){
 
 return(
-<div className="background">
 
-<h1 className="title">
+<div className="peopleBackground">
+
+<div className="peopleBox">
+
+<h1>
 Hi I'm Zoe
 </h1>
 
-<h2 className="subtitle">
-Editor-in-chief, Social Media Manager, Formatter, Author
-</h2>
+<p>
+Coming soon...
+</p>
 
 </div>
+
+</div>
+
 )
 
 }
