@@ -43,7 +43,13 @@ export default function Home() {
 
       </div>
 
-      <div style={{ textAlign: "center", marginTop: "120px", paddingBottom: "80px" }}>
+      <div
+        style={{
+          textAlign: "center",
+          marginTop: "120px",
+          paddingBottom: "80px",
+        }}
+      >
 
         <div className="textBox" style={{ marginBottom: "35px" }}>
           <h2>Explore the Magazine</h2>
@@ -59,10 +65,6 @@ export default function Home() {
           Pricing
         </Link>
 
-        <Link className="card" href="/topics">
-          Topics
-        </Link>
-
         <Link className="card" href="/goals">
           Goals
         </Link>
@@ -71,5 +73,4 @@ export default function Home() {
 
     </div>
   );
-
 }
