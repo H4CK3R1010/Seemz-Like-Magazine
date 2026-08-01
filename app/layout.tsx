@@ -1,13 +1,11 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 
 
-export const metadata: Metadata = {
+export const metadata = {
 
-  title: "Seemz Like...",
-
-  description: "For kids, By kids."
+title: "Seemz Like...",
+description: "For kids, By kids"
 
 };
 
@@ -15,11 +13,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
 
-  children,
+children,
 
 }: {
 
-  children: React.ReactNode;
+children: React.ReactNode;
 
 }) {
 
@@ -33,8 +31,29 @@ return (
 
 <nav>
 
+
 <Link href="/">
 Home
+</Link>
+
+
+<Link href="/about">
+About
+</Link>
+
+
+<Link href="/pricing">
+Pricing
+</Link>
+
+
+<Link href="/donate">
+Donate
+</Link>
+
+
+<Link href="/contact">
+Contact
 </Link>
 
 
