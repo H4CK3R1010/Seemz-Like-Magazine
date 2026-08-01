@@ -8,7 +8,7 @@ Hi I'm Maddox
 </h1>
 
 <h2 className="subtitle">
-Author
+Author, Treasurer
 </h2>
 
 </div>
