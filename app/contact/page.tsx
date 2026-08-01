@@ -6,11 +6,14 @@ return(
 <div className="pageBox">
 
 <h1>
-Contact
+Contact Us
 </h1>
 
 <p>
-You can contact us at seemzlike@gmail.com
+You can contact us at{" "}
+<a href="mailto:seemzlike@gmail.com">
+seemzlike@gmail.com
+</a>
 </p>
 
 </div>
