@@ -241,7 +241,7 @@ nav a:hover {
 ========================= */
 
 .teamSection {
-  min-height: 900px;
+  min-height: 850px;
 
   background: #eefaff;
 
@@ -282,35 +282,20 @@ nav a:hover {
 
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 60px 50px;
+  gap: 35px 50px;
 }
 
-
-.teamMember {
-  text-align: center;
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-}
-
-
-/* =========================
-   TEAM BUTTONS
-========================= */
 
 .teamButton {
-  display: inline-flex;
+  display: flex;
 
   align-items: center;
 
   justify-content: center;
 
-  min-width: 230px;
+  min-height: 90px;
 
-  padding: 18px 35px;
+  padding: 20px 35px;
 
   border-radius: 15px;
 
@@ -336,25 +321,6 @@ nav a:hover {
   transform: translateY(-4px);
 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
-}
-
-
-/* =========================
-   TEAM DESCRIPTIONS
-========================= */
-
-.teamMember p {
-  max-width: 600px;
-
-  margin: 25px auto 0;
-
-  text-align: center;
-
-  font-size: 21px;
-
-  line-height: 1.6;
-
-  color: black;
 }
 
 
@@ -398,6 +364,8 @@ nav a:hover {
   align-items: center;
 
   text-align: center;
+
+  padding: 100px 30px;
 }
 
 
@@ -431,24 +399,16 @@ nav a:hover {
 .peopleBackground {
   min-height: 100vh;
 
-  background-image: url("/people-background.jpg");
-
-  background-size: cover;
-
-  background-position: center;
-
-  background-repeat: no-repeat;
-
-  background-attachment: fixed;
+  background: white;
 
   color: black;
 
-  padding-top: 80px;
+  padding-top: 75px;
 }
 
 
 .peopleBox {
-  min-height: 100vh;
+  min-height: calc(100vh - 75px);
 
   display: flex;
 
@@ -459,26 +419,32 @@ nav a:hover {
   align-items: center;
 
   text-align: center;
+
+  padding: 80px 30px;
 }
 
 
 .peopleBox h1 {
-  font-size: 90px;
+  font-size: clamp(60px, 8vw, 100px);
 
   font-weight: bold;
 
   color: black;
 
-  margin: 0;
+  margin: 0 0 35px;
 }
 
 
 .peopleBox p {
-  font-size: 40px;
+  max-width: 850px;
+
+  font-size: 24px;
+
+  line-height: 1.6;
 
   color: black;
 
-  margin-top: 30px;
+  margin: 0;
 }
 
 
@@ -537,8 +503,6 @@ nav a:hover {
   }
 
 
-  /* TEAM MOBILE */
-
   .teamSection {
     padding: 80px 25px;
   }
@@ -547,24 +511,24 @@ nav a:hover {
   .teamGrid {
     grid-template-columns: 1fr;
 
-    gap: 45px;
+    gap: 25px;
   }
 
 
   .teamContent h2 {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
 
   .teamButton {
     width: 100%;
 
-    max-width: 350px;
+    min-height: 80px;
   }
 
 
-  .teamMember p {
-    font-size: 19px;
+  .peopleBox p {
+    font-size: 20px;
   }
 
 }
