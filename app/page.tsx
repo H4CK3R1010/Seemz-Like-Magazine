@@ -1,102 +1,64 @@
 import Link from "next/link";
 
+export default function Home() {
+  return (
+    <div className="homePage">
 
-export default function Home(){
+      {/* HERO SECTION */}
 
+      <section className="heroSection">
 
-const people=[
+        <div className="heroContent">
 
-"zoe",
+          <h1>
+            For Kids, By Kids
+          </h1>
 
-"maddox",
+          <ul className="heroFeatures">
+            <li>
+              <span>★</span>
+              The go to magazine for curious kids and teens
+            </li>
 
-"sophia",
+            <li>
+              <span>★</span>
+              Digital and print copies available
+            </li>
+          </ul>
 
-"evan",
+          <div className="subscribeButtons">
 
-"zak",
+            <Link
+              href="/pricing"
+              className="subscribeButton printButton"
+            >
+              Subscribe to Print
+            </Link>
 
-"evelyn",
+            <Link
+              href="/pricing"
+              className="subscribeButton digitalButton"
+            >
+              Subscribe to Digital
+            </Link>
 
-"max",
+          </div>
 
-"elliot"
+        </div>
 
-];
-
-
-return(
-
-<div className="background">
-
-
-<div style={{
-textAlign:"center",
-paddingTop:"120px"
-}}>
-
-
-<h1 className="title">
-
-Seemz Like...
-
-</h1>
-
-
-<h2 className="subtitle">
-
-For kids, By kids
-
-</h2>
-
-
-</div>
+      </section>
 
 
+      {/* WHITE CONTENT AREA */}
 
-<div style={{
-textAlign:"center",
-marginTop:"120px"
-}}>
+      <section className="contentArea">
 
+        {/* 
+          Add more magazine sections here later.
+        */}
 
-<h2>
+      </section>
 
-Meet the Team
-
-</h2>
-
-
-
-{
-
-people.map((person)=>(
-
-<Link
-
-key={person}
-
-href={`/people/${person}`}
-
-className="card"
-
->
-
-{person.charAt(0).toUpperCase()+person.slice(1)}
-
-</Link>
-
-
-))
-
-}
-
-
-</div>
-
-
-</div>
-
-)
-
+    </div>
+  );
 }
