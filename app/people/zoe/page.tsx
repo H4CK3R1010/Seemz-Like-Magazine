@@ -5,7 +5,7 @@ export default function Zoe() {
       <div className="peopleBox">
 
         <h1>
-          Hi, I'm Zoe
+          Zoe
         </h1>
 
         <p>
@@ -16,6 +16,18 @@ export default function Zoe() {
           reading, I’m usually out on the golf course or working on a
           creative project.
         </p>
+
+        <div className="rolesBox">
+
+          <h2>
+            Roles
+          </h2>
+
+          <ul>
+            {/* Editor In-Chief, Social Media Manager, Formatter, Author */}
+          </ul>
+
+        </div>
 
       </div>
 
