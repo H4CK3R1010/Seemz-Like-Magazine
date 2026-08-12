@@ -61,128 +61,39 @@ export default function Home() {
             Meet the Team
           </h2>
 
-
           <div className="teamGrid">
 
-            {/* ZOE */}
+            <Link href="/people/zoe" className="teamButton">
+              Zoe
+            </Link>
 
-            <div className="teamMember">
+            <Link href="/people/maddox" className="teamButton">
+              Maddox
+            </Link>
 
-              <Link
-                href="/people/zoe"
-                className="teamButton"
-              >
-                Zoe
-              </Link>
+            <Link href="/people/sophia" className="teamButton">
+              Sophia
+            </Link>
 
-              <p>
-                Hi! I’m Zoe, a junior in high school who loves reading,
-                golfing, crafting, and exploring new ideas. I love learning
-                about how the human brain works, and I’m hoping to major in
-                neuroscience or cognitive science. When I’m not studying or
-                reading, I’m usually out on the golf course or working on a
-                creative project.
-              </p>
+            <Link href="/people/evan" className="teamButton">
+              Evan
+            </Link>
 
-            </div>
+            <Link href="/people/zak" className="teamButton">
+              Zak
+            </Link>
 
+            <Link href="/people/evelyn" className="teamButton">
+              Evelyn
+            </Link>
 
-            {/* MADDOX */}
+            <Link href="/people/max" className="teamButton">
+              Max
+            </Link>
 
-            <div className="teamMember">
-
-              <Link
-                href="/people/maddox"
-                className="teamButton"
-              >
-                Maddox
-              </Link>
-
-            </div>
-
-
-            {/* SOPHIA */}
-
-            <div className="teamMember">
-
-              <Link
-                href="/people/sophia"
-                className="teamButton"
-              >
-                Sophia
-              </Link>
-
-            </div>
-
-
-            {/* EVAN */}
-
-            <div className="teamMember">
-
-              <Link
-                href="/people/evan"
-                className="teamButton"
-              >
-                Evan
-              </Link>
-
-            </div>
-
-
-            {/* ZAK */}
-
-            <div className="teamMember">
-
-              <Link
-                href="/people/zak"
-                className="teamButton"
-              >
-                Zak
-              </Link>
-
-            </div>
-
-
-            {/* EVELYN */}
-
-            <div className="teamMember">
-
-              <Link
-                href="/people/evelyn"
-                className="teamButton"
-              >
-                Evelyn
-              </Link>
-
-            </div>
-
-
-            {/* MAX */}
-
-            <div className="teamMember">
-
-              <Link
-                href="/people/max"
-                className="teamButton"
-              >
-                Max
-              </Link>
-
-            </div>
-
-
-            {/* ELLIOT */}
-
-            <div className="teamMember">
-
-              <Link
-                href="/people/elliot"
-                className="teamButton"
-              >
-                Elliot
-              </Link>
-
-            </div>
+            <Link href="/people/elliot" className="teamButton">
+              Elliot
+            </Link>
 
           </div>
 
@@ -191,7 +102,7 @@ export default function Home() {
       </section>
 
 
-      {/* FUTURE WHITE CONTENT AREA */}
+      {/* WHITE AREA FOR FUTURE SECTIONS */}
 
       <section className="contentArea">
 
