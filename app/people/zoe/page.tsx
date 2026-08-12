@@ -1,23 +1,24 @@
-export default function Zoe(){
+export default function Zoe() {
+  return (
+    <div className="peopleBackground">
 
-return(
+      <div className="peopleBox">
 
-<div className="peopleBackground">
+        <h1>
+          Hi, I'm Zoe
+        </h1>
 
-<div className="peopleBox">
+        <p>
+          Hi! I’m Zoe, a junior in high school who loves reading,
+          golfing, crafting, and exploring new ideas. I love learning
+          about how the human brain works, and I’m hoping to major in
+          neuroscience or cognitive science. When I’m not studying or
+          reading, I’m usually out on the golf course or working on a
+          creative project.
+        </p>
 
-<h1>
-Hi I'm Zoe
-</h1>
+      </div>
 
-<p>
-Coming soon...
-</p>
-
-</div>
-
-</div>
-
-)
-
+    </div>
+  );
 }
