@@ -16,6 +16,19 @@ export default function Maddox() {
           we had making it!
         </p>
 
+        <div className="rolesBox">
+
+          <h2>
+            Roles
+          </h2>
+
+          <ul>
+            <li>Treasurer</li>
+            <li>Author</li>
+          </ul>
+
+        </div>
+
       </div>
 
     </div>
