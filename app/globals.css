@@ -249,14 +249,14 @@ nav a:hover {
 
   background: #eefaff;
 
-  padding: 110px 5%;
+  padding: 110px 3%;
 }
 
 
 .teamContent {
-  max-width: 1500px;
-
   width: 100%;
+
+  max-width: 1800px;
 
   margin: 0 auto;
 }
@@ -279,42 +279,34 @@ nav a:hover {
 
 /* =========================
    TEAM BUTTONS
-   ONE STRAIGHT LINE
+   USE ENTIRE PAGE
 ========================= */
 
 .teamGrid {
-  display: flex;
+  display: grid;
 
-  flex-direction: row;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
 
-  justify-content: center;
+  width: 100%;
 
-  align-items: center;
+  gap: 12px;
 
-  gap: 15px;
-
-  flex-wrap: nowrap;
-
-  overflow-x: auto;
-
-  padding: 20px 0;
+  padding: 0;
 }
 
 
 .teamButton {
-  flex: 0 0 auto;
-
   display: flex;
 
   align-items: center;
 
   justify-content: center;
 
-  min-width: 150px;
+  width: 100%;
 
-  min-height: 80px;
+  min-height: 90px;
 
-  padding: 18px 25px;
+  padding: 15px 10px;
 
   border-radius: 15px;
 
@@ -324,7 +316,7 @@ nav a:hover {
 
   text-decoration: none;
 
-  font-size: 25px;
+  font-size: 22px;
 
   font-weight: bold;
 
@@ -367,24 +359,24 @@ nav a:hover {
 
   color: black;
 
-  padding-top: 80px;
+  padding-top: 75px;
 }
 
 
 .pageBox {
-  min-height: 100vh;
+  min-height: calc(100vh - 75px);
 
   display: flex;
 
   flex-direction: column;
 
-  justify-content: center;
+  justify-content: flex-start;
 
   align-items: center;
 
   text-align: center;
 
-  padding: 100px 30px;
+  padding: 70px 30px 100px;
 }
 
 
@@ -394,6 +386,8 @@ nav a:hover {
   font-weight: bold;
 
   color: black;
+
+  margin: 0 0 50px;
 }
 
 
@@ -408,6 +402,30 @@ nav a:hover {
   color: blue;
 
   text-decoration: underline;
+}
+
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.aboutText {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+.aboutText p {
+  font-size: 28px;
+
+  line-height: 1.6;
+
+  margin: 0 0 35px;
+
+  color: black;
 }
 
 
@@ -507,6 +525,17 @@ nav a:hover {
    MOBILE
 ========================= */
 
+@media (max-width: 1000px) {
+
+  .teamGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 15px;
+  }
+
+}
+
+
 @media (max-width: 700px) {
 
   nav {
@@ -569,24 +598,35 @@ nav a:hover {
 
 
   .teamGrid {
-    flex-direction: row;
-
-    justify-content: flex-start;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     gap: 15px;
-
-    overflow-x: auto;
-
-    flex-wrap: nowrap;
   }
 
 
   .teamButton {
-    min-width: 140px;
-
     min-height: 70px;
 
     font-size: 22px;
+  }
+
+
+  .pageBox {
+    padding: 45px 20px 80px;
+  }
+
+
+  .pageBox h1 {
+    font-size: 55px;
+
+    margin-bottom: 35px;
+  }
+
+
+  .aboutText p {
+    font-size: 21px;
+
+    line-height: 1.5;
   }
 
 
