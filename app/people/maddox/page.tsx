@@ -1,23 +1,23 @@
-export default function Maddox(){
+export default function Maddox() {
+  return (
+    <div className="peopleBackground">
 
-return(
+      <div className="peopleBox">
 
-<div className="peopleBackground">
+        <h1>
+          Maddox
+        </h1>
 
-<div className="peopleBox">
+        <p>
+          Hi! I'm Maddox, I’m a freshman in high school. I enjoy playing
+          sports, video games, and learning about new technology. I also
+          like investing, drumming, biking, and spending time with my
+          family. I hope you have as much fun reading this magazine as
+          we had making it!
+        </p>
 
-<h1>
-Hi I'm Maddox
-</h1>
+      </div>
 
-<p>
-Coming soon...
-</p>
-
-</div>
-
-</div>
-
-)
-
+    </div>
+  );
 }
