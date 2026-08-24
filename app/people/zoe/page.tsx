@@ -24,7 +24,10 @@ export default function Zoe() {
           </h2>
 
           <ul>
-            {/* Editor In-Chief, Social Media Manager, Formatter, Author */}
+            <li>Editor-in-chief</li>
+            <li>Social media manager</li>
+            <li>Formatter</li>
+            <li>Author</li>
           </ul>
 
         </div>
