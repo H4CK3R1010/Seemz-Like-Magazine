@@ -19,12 +19,11 @@ export default function Maddox() {
         <div className="rolesBox">
 
           <h2>
-            Roles
+            Treasurer, Author
           </h2>
 
           <ul>
-            <li>Treasurer</li>
-            <li>Author</li>
+            
           </ul>
 
         </div>
