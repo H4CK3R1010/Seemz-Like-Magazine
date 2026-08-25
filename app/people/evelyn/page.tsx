@@ -11,7 +11,7 @@ export default function Evelyn() {
         <p>
    
           <br /><br />
-          I'm a 12 year old student in 7th grade. I play competitive
+          Hi, I'm Evelyn! I'm a 12 year old student in 7th grade. I play competitive
           soccer as a defensive and midfield player. In my downtime,
           I like to draw and do arts and crafts! I love to travel
           around the world with my family and relatives! I have been
