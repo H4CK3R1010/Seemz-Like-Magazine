@@ -21,8 +21,12 @@ export default function Evelyn() {
 
         <div className="rolesBox">
 
+          <h2>
+          Graphic designer, Author
+          </h2>
+
           <p>
-            Graphic designer, Author
+            
           </p>
 
         </div>
