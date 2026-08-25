@@ -496,30 +496,15 @@ nav a:hover {
 }
 
 
-.rolesBox h2 {
-  font-size: 40px;
+.rolesBox p {
+  font-size: 26px;
 
   font-weight: bold;
 
-  margin-bottom: 20px;
-}
-
-
-.rolesBox ul {
-  list-style: none;
-
-  padding: 0;
-
   margin: 0;
+
+  color: black;
 }
-
-
-.rolesBox li {
-  font-size: 24px;
-
-  margin: 10px 0;
-}
-
 
 /* =========================
    MOBILE
