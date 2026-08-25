@@ -19,7 +19,7 @@ export default function Maddox() {
         <div className="rolesBox">
 
           <h2>
-            Treasurer, Author
+        Treasurer, Author
           </h2>
 
           <ul>
