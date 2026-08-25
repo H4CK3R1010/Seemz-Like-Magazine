@@ -19,11 +19,11 @@ export default function Evan() {
         <div className="rolesBox">
 
           <h2>
-        
+        Author
           </h2>
 
           <ul>
-            <li>Author</li>
+            
           </ul>
 
         </div>
