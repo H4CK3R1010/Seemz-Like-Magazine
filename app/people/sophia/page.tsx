@@ -25,13 +25,11 @@ export default function Sophia() {
         <div className="rolesBox">
 
           <h2>
-            Roles
+            Copy editor, Formatter, Author
           </h2>
 
           <ul>
-            <li>Copy editor</li>
-            <li>Formatter</li>
-            <li>Author</li>
+            
           </ul>
 
         </div>
