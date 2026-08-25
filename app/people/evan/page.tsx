@@ -1,23 +1,35 @@
-export default function Evan(){
+export default function Evan() {
+  return (
+    <div className="peopleBackground">
 
-return(
+      <div className="peopleBox">
 
-<div className="peopleBackground">
+        <h1>
+          Evan
+        </h1>
 
-<div className="peopleBox">
+        <p>
+          Hi, I’m Evan and I am an 8th grader. I enjoy playing Soccer/Futbol.
+          I also like to play video games, watch movies, swim, and create
+          YouTube videos about gaming(@EqUan_17). My favorite animals are
+          dogs and I also love to travel. I hope you enjoy reading this
+          magazine as much as I like to write it.
+        </p>
 
-<h1>
-Hi I'm Evan
-</h1>
+        <div className="rolesBox">
 
-<p>
-Coming soon...
-</p>
+          <h2>
+        
+          </h2>
 
-</div>
+          <ul>
+            <li>Author</li>
+          </ul>
 
-</div>
+        </div>
 
-)
+      </div>
 
+    </div>
+  );
 }
