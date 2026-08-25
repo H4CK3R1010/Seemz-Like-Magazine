@@ -506,6 +506,16 @@ nav a:hover {
   color: black;
 }
 
+.rolesBox h2 {
+  font-size: 32px;
+
+  font-weight: bold;
+
+  margin: 0;
+
+  color: black;
+}
+
 /* =========================
    MOBILE
 ========================= */
