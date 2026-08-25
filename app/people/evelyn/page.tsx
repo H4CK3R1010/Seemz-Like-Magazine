@@ -9,7 +9,7 @@ export default function Evelyn() {
         </h1>
 
         <p>
-          Hi, I'm Evelyn!
+   
           <br /><br />
           I'm a 12 year old student in 7th grade. I play competitive
           soccer as a defensive and midfield player. In my downtime,
