@@ -20,14 +20,11 @@ export default function Zoe() {
         <div className="rolesBox">
 
           <h2>
-            Roles
+            Editor-in-chief, Social media manager, Formatter, Author
           </h2>
 
           <ul>
-            <li>Editor-in-chief</li>
-            <li>Social media manager</li>
-            <li>Formatter</li>
-            <li>Author</li>
+            
           </ul>
 
         </div>
