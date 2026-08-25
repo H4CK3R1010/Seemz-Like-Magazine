@@ -29,7 +29,6 @@ body {
 
 nav {
   position: fixed;
-
   top: 0;
   left: 0;
   right: 0;
@@ -39,13 +38,10 @@ nav {
   z-index: 1000;
 
   display: flex;
-
   align-items: center;
-
   justify-content: flex-end;
 
   padding: 0 35px;
-
   gap: 25px;
 
   background: white;
@@ -56,11 +52,9 @@ nav {
 
 nav a {
   color: black;
-
   text-decoration: none;
 
   font-size: 20px;
-
   font-weight: bold;
 }
 
@@ -76,7 +70,6 @@ nav a:hover {
 
 .homePage {
   min-height: 100vh;
-
   background: white;
 }
 
@@ -93,7 +86,6 @@ nav a:hover {
   background: #fcf3ff;
 
   display: flex;
-
   align-items: center;
 
   padding: 100px 8%;
@@ -102,7 +94,6 @@ nav a:hover {
 
 .heroContent {
   max-width: 1100px;
-
   width: 100%;
 
   margin: 0 auto;
@@ -184,7 +175,6 @@ nav a:hover {
   display: inline-flex;
 
   align-items: center;
-
   justify-content: center;
 
   min-width: 240px;
@@ -241,7 +231,7 @@ nav a:hover {
 
 
 /* =========================
-   MEET THE TEAM SECTION
+   MEET THE TEAM
 ========================= */
 
 .teamSection {
@@ -277,11 +267,6 @@ nav a:hover {
 }
 
 
-/* =========================
-   TEAM BUTTONS
-   USE ENTIRE PAGE
-========================= */
-
 .teamGrid {
   display: grid;
 
@@ -299,7 +284,6 @@ nav a:hover {
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   width: 100%;
@@ -376,7 +360,7 @@ nav a:hover {
 
   text-align: center;
 
-  padding: 70px 30px 100px;
+  padding: 50px 30px 80px;
 }
 
 
@@ -387,7 +371,7 @@ nav a:hover {
 
   color: black;
 
-  margin: 0 0 50px;
+  margin: 0 0 40px;
 }
 
 
@@ -451,13 +435,13 @@ nav a:hover {
 
   flex-direction: column;
 
-  justify-content: center;
+  justify-content: flex-start;
 
   align-items: center;
 
   text-align: center;
 
-  padding: 80px 30px;
+  padding: 45px 30px 60px;
 }
 
 
@@ -468,7 +452,7 @@ nav a:hover {
 
   color: black;
 
-  margin: 0 0 35px;
+  margin: 0 0 20px;
 }
 
 
@@ -477,7 +461,7 @@ nav a:hover {
 
   font-size: 24px;
 
-  line-height: 1.6;
+  line-height: 1.5;
 
   color: black;
 
@@ -490,21 +474,11 @@ nav a:hover {
 ========================= */
 
 .rolesBox {
-  margin-top: 60px;
+  margin-top: 30px;
 
   text-align: center;
 }
 
-
-.rolesBox p {
-  font-size: 26px;
-
-  font-weight: bold;
-
-  margin: 0;
-
-  color: black;
-}
 
 .rolesBox h2 {
   font-size: 32px;
@@ -515,6 +489,16 @@ nav a:hover {
 
   color: black;
 }
+
+
+.rolesBox ul {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
 
 /* =========================
    MOBILE
@@ -607,14 +591,14 @@ nav a:hover {
 
 
   .pageBox {
-    padding: 45px 20px 80px;
+    padding: 40px 20px 70px;
   }
 
 
   .pageBox h1 {
     font-size: 55px;
 
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
 
@@ -625,8 +609,32 @@ nav a:hover {
   }
 
 
+  .peopleBox {
+    padding: 35px 20px 50px;
+  }
+
+
+  .peopleBox h1 {
+    font-size: 60px;
+
+    margin-bottom: 15px;
+  }
+
+
   .peopleBox p {
     font-size: 20px;
+
+    line-height: 1.5;
+  }
+
+
+  .rolesBox {
+    margin-top: 25px;
+  }
+
+
+  .rolesBox h2 {
+    font-size: 26px;
   }
 
 }
