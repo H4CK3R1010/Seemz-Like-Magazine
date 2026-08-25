@@ -19,8 +19,12 @@ export default function Elliot() {
 
         <div className="rolesBox">
 
-          <p>
+          <h2>
             Illustrator, Author
+          </h2>
+
+          <p>
+            
           </p>
 
         </div>
