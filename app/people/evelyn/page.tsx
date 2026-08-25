@@ -1,23 +1,34 @@
-export default function Evelyn(){
+export default function Evelyn() {
+  return (
+    <div className="peopleBackground">
 
-return(
+      <div className="peopleBox">
 
-<div className="peopleBackground">
+        <h1>
+          Evelyn
+        </h1>
 
-<div className="peopleBox">
+        <p>
+          Hi, I'm Evelyn!
+          <br /><br />
+          I'm a 12 year old student in 7th grade. I play competitive
+          soccer as a defensive and midfield player. In my downtime,
+          I like to draw and do arts and crafts! I love to travel
+          around the world with my family and relatives! I have been
+          to many places around the world. We hope you enjoy our
+          magazine we have spent a while perfecting!
+        </p>
 
-<h1>
-Hi I'm Evelyn
-</h1>
+        <div className="rolesBox">
 
-<p>
-Coming soon...
-</p>
+          <p>
+            Graphic designer, Author
+          </p>
 
-</div>
+        </div>
 
-</div>
+      </div>
 
-)
-
+    </div>
+  );
 }
