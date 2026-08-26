@@ -1,9 +1,37 @@
 "use client";
 
-import { useForm, ValidationError } from "@formspree/react";
+import { FormEvent, useState } from "react";
 
 export default function Contact() {
-  const [state, handleSubmit] = useForm("xeajypzq");
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">(
+    "idle"
+  );
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setStatus("sending");
+
+    const form = event.currentTarget;
+
+    try {
+      const response = await fetch("https://formspree.io/f/xeajypzq", {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Message could not be sent.");
+      }
+
+      form.reset();
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
+  }
 
   return (
     <main className="background">
@@ -15,7 +43,7 @@ export default function Contact() {
           <a href="mailto:seemzlike@gmail.com">seemzlike@gmail.com</a>
         </p>
 
-        {state.succeeded ? (
+        {status === "success" ? (
           <p className="formMessage success">
             Thanks! Your message has been sent.
           </p>
@@ -44,11 +72,6 @@ export default function Contact() {
               placeholder="Your email"
               required
             />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
 
             <label htmlFor="message">Message</label>
             <textarea
@@ -58,17 +81,16 @@ export default function Contact() {
               rows={7}
               required
             />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
 
-            <button type="submit" disabled={state.submitting}>
-              {state.submitting ? "Sending..." : "Send Message"}
+            <button type="submit" disabled={status === "sending"}>
+              {status === "sending" ? "Sending..." : "Send Message"}
             </button>
 
-            <ValidationError errors={state.errors} />
+            {status === "error" && (
+              <p className="formMessage error">
+                Sorry, your message could not be sent. Please email us directly.
+              </p>
+            )}
           </form>
         )}
       </section>
