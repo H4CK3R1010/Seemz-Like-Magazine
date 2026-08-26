@@ -204,10 +204,6 @@ nav a:hover {
 }
 
 
-/* =========================
-   PRINT BUTTON
-========================= */
-
 .printButton {
   background: linear-gradient(
     90deg,
@@ -216,10 +212,6 @@ nav a:hover {
   );
 }
 
-
-/* =========================
-   DIGITAL BUTTON
-========================= */
 
 .digitalButton {
   background: linear-gradient(
@@ -441,7 +433,7 @@ nav a:hover {
 
   text-align: center;
 
-  padding: 45px 30px 60px;
+  padding: 35px 30px 50px;
 }
 
 
@@ -452,7 +444,7 @@ nav a:hover {
 
   color: black;
 
-  margin: 0 0 20px;
+  margin: 0 0 15px;
 }
 
 
@@ -474,7 +466,7 @@ nav a:hover {
 ========================= */
 
 .rolesBox {
-  margin-top: 30px;
+  margin-top: 25px;
 
   text-align: center;
 }
@@ -497,6 +489,147 @@ nav a:hover {
   padding: 0;
 
   margin: 0;
+}
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contactPage {
+  min-height: calc(100vh - 75px);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 45px 20px 80px;
+}
+
+
+.contactPage h1 {
+  margin: 0 0 20px;
+
+  font-size: clamp(55px, 7vw, 85px);
+
+  font-weight: bold;
+
+  color: black;
+}
+
+
+.contactEmail {
+  margin: 0 0 45px;
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+  color: black;
+}
+
+
+.contactEmail a {
+  color: black;
+
+  text-decoration: underline;
+}
+
+
+.contactForm {
+  width: 100%;
+
+  max-width: 700px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  text-align: left;
+}
+
+
+.contactForm label {
+  margin-bottom: 8px;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  color: black;
+}
+
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+
+  padding: 15px;
+
+  margin-bottom: 25px;
+
+  border: 2px solid #d9d9d9;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: black;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 18px;
+
+  outline: none;
+}
+
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #999999;
+}
+
+
+.contactForm textarea {
+  resize: vertical;
+
+  min-height: 150px;
+}
+
+
+.contactForm button {
+  align-self: center;
+
+  padding: 16px 40px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: black;
+
+  color: white;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+.contactForm button:hover {
+  transform: translateY(-2px);
+
+  opacity: 0.8;
 }
 
 
@@ -635,6 +768,25 @@ nav a:hover {
 
   .rolesBox h2 {
     font-size: 26px;
+  }
+
+
+  .contactPage {
+    padding: 35px 20px 60px;
+  }
+
+
+  .contactPage h1 {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+  }
+
+
+  .contactEmail {
+    font-size: 21px;
+
+    margin-bottom: 35px;
   }
 
 }
