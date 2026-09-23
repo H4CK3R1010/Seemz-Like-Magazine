@@ -1,72 +1,37 @@
 import Link from "next/link";
 import "./globals.css";
 
-
 export const metadata = {
-
-title: "Seemz Like...",
-description: "For kids, By kids"
-
+  title: "Seemz Like...",
+  description: "For kids, By kids",
 };
 
-
-
 export default function RootLayout({
-
-children,
-
+  children,
 }: {
-
-children: React.ReactNode;
-
+  children: React.ReactNode;
 }) {
+  return (
+    <html lang="en">
+      <body>
+        <nav>
+          <Link href="/" className="navLogo" aria-label="SEMZ home">
+            <img src="/semz-logo-nav.png" alt="SEMZ" />
+          </Link>
 
+          <Link href="/">Home</Link>
 
-return (
+          <Link href="/about">About</Link>
 
-<html lang="en">
+          <Link href="/pricing">Pricing</Link>
 
-<body>
+          <Link href="/donate">Donate</Link>
 
+          <Link href="/contact">Contact</Link>
+        </nav>
 
-<nav>
-
-
-<Link href="/">
-Home
-</Link>
-
-
-<Link href="/about">
-About
-</Link>
-
-
-<Link href="/pricing">
-Pricing
-</Link>
-
-
-<Link href="/donate">
-Donate
-</Link>
-
-
-<Link href="/contact">
-Contact
-</Link>
-
-
-</nav>
-
-
-{children}
-
-
-</body>
-
-</html>
-
-);
-
+        {children}
+      </body>
+    </html>
+  );
 }
