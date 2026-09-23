@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* =========================
    GENERAL
 ========================= */
@@ -21,7 +20,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
-
 
 /* =========================
    NAVIGATION
@@ -49,7 +47,6 @@ nav {
   border-bottom: 1px solid #eeeeee;
 }
 
-
 nav a {
   color: black;
   text-decoration: none;
@@ -58,11 +55,22 @@ nav a {
   font-weight: bold;
 }
 
-
 nav a:hover {
   text-decoration: underline;
 }
 
+.navLogo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: auto;
+}
+
+.navLogo img {
+  display: block;
+  width: 130px;
+  height: auto;
+}
 
 /* =========================
    HOME PAGE
@@ -72,7 +80,6 @@ nav a:hover {
   min-height: 100vh;
   background: white;
 }
-
 
 /* =========================
    HERO SECTION
@@ -91,14 +98,12 @@ nav a:hover {
   padding: 100px 8%;
 }
 
-
 .heroContent {
   max-width: 1100px;
   width: 100%;
 
   margin: 0 auto;
 }
-
 
 .heroContent h1 {
   margin: 0 0 35px;
@@ -114,7 +119,6 @@ nav a:hover {
   color: black;
 }
 
-
 /* =========================
    HERO BULLET POINTS
 ========================= */
@@ -128,7 +132,6 @@ nav a:hover {
 
   max-width: 850px;
 }
-
 
 .heroFeatures li {
   display: flex;
@@ -148,7 +151,6 @@ nav a:hover {
   color: black;
 }
 
-
 .heroFeatures li span {
   font-size: 25px;
 
@@ -156,7 +158,6 @@ nav a:hover {
 
   flex-shrink: 0;
 }
-
 
 /* =========================
    SUBSCRIBE BUTTONS
@@ -169,7 +170,6 @@ nav a:hover {
 
   gap: 20px;
 }
-
 
 .subscribeButton {
   display: inline-flex;
@@ -196,13 +196,11 @@ nav a:hover {
     box-shadow 0.2s ease;
 }
 
-
 .subscribeButton:hover {
   transform: translateY(-3px);
 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }
-
 
 .printButton {
   background: linear-gradient(
@@ -212,7 +210,6 @@ nav a:hover {
   );
 }
 
-
 .digitalButton {
   background: linear-gradient(
     90deg,
@@ -220,7 +217,6 @@ nav a:hover {
     #b51f2a 100%
   );
 }
-
 
 /* =========================
    MEET THE TEAM
@@ -234,7 +230,6 @@ nav a:hover {
   padding: 110px 3%;
 }
 
-
 .teamContent {
   width: 100%;
 
@@ -242,7 +237,6 @@ nav a:hover {
 
   margin: 0 auto;
 }
-
 
 .teamContent h2 {
   margin: 0 0 70px;
@@ -258,7 +252,6 @@ nav a:hover {
   color: black;
 }
 
-
 .teamGrid {
   display: grid;
 
@@ -270,7 +263,6 @@ nav a:hover {
 
   padding: 0;
 }
-
 
 .teamButton {
   display: flex;
@@ -303,13 +295,11 @@ nav a:hover {
     box-shadow 0.2s ease;
 }
 
-
 .teamButton:hover {
   transform: translateY(-4px);
 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }
-
 
 /* =========================
    WHITE CONTENT AREA
@@ -322,7 +312,6 @@ nav a:hover {
 
   padding: 100px 8%;
 }
-
 
 /* =========================
    OTHER PAGES
@@ -337,7 +326,6 @@ nav a:hover {
 
   padding-top: 75px;
 }
-
 
 .pageBox {
   min-height: calc(100vh - 75px);
@@ -355,7 +343,6 @@ nav a:hover {
   padding: 50px 30px 80px;
 }
 
-
 .pageBox h1 {
   font-size: 80px;
 
@@ -366,20 +353,17 @@ nav a:hover {
   margin: 0 0 40px;
 }
 
-
 .pageBox p {
   font-size: 40px;
 
   color: black;
 }
 
-
 .pageBox a {
   color: blue;
 
   text-decoration: underline;
 }
-
 
 /* =========================
    ABOUT PAGE
@@ -393,7 +377,6 @@ nav a:hover {
   text-align: center;
 }
 
-
 .aboutText p {
   font-size: 28px;
 
@@ -403,7 +386,6 @@ nav a:hover {
 
   color: black;
 }
-
 
 /* =========================
    PEOPLE PAGES
@@ -418,7 +400,6 @@ nav a:hover {
 
   padding-top: 75px;
 }
-
 
 .peopleBox {
   min-height: calc(100vh - 75px);
@@ -436,7 +417,6 @@ nav a:hover {
   padding: 35px 30px 50px;
 }
 
-
 .peopleBox h1 {
   font-size: clamp(60px, 8vw, 100px);
 
@@ -446,7 +426,6 @@ nav a:hover {
 
   margin: 0 0 15px;
 }
-
 
 .peopleBox p {
   max-width: 850px;
@@ -460,7 +439,6 @@ nav a:hover {
   margin: 0;
 }
 
-
 /* =========================
    PERSON ROLES
 ========================= */
@@ -470,7 +448,6 @@ nav a:hover {
 
   text-align: center;
 }
-
 
 .rolesBox h2 {
   font-size: 32px;
@@ -482,7 +459,6 @@ nav a:hover {
   color: black;
 }
 
-
 .rolesBox ul {
   list-style: none;
 
@@ -490,7 +466,6 @@ nav a:hover {
 
   margin: 0;
 }
-
 
 /* =========================
    CONTACT PAGE
@@ -507,12 +482,15 @@ nav a:hover {
 
   text-align: center;
 
-  padding: 45px 20px 80px;
+  width: min(94%, 1000px);
+
+  margin: 0 auto;
+
+  padding: 85px 0 40px;
 }
 
-
 .contactPage h1 {
-  margin: 0 0 20px;
+  margin: 0 0 14px;
 
   font-size: clamp(55px, 7vw, 85px);
 
@@ -521,9 +499,8 @@ nav a:hover {
   color: black;
 }
 
-
 .contactEmail {
-  margin: 0 0 45px;
+  margin: 0 0 12px;
 
   font-size: 28px;
 
@@ -532,13 +509,17 @@ nav a:hover {
   color: black;
 }
 
-
 .contactEmail a {
   color: black;
 
   text-decoration: underline;
 }
 
+.contactFormIntro {
+  margin: 0 0 25px;
+
+  font-weight: bold;
+}
 
 .contactForm {
   width: 100%;
@@ -552,7 +533,6 @@ nav a:hover {
   text-align: left;
 }
 
-
 .contactForm label {
   margin-bottom: 8px;
 
@@ -562,7 +542,6 @@ nav a:hover {
 
   color: black;
 }
-
 
 .contactForm input,
 .contactForm textarea {
@@ -587,19 +566,16 @@ nav a:hover {
   outline: none;
 }
 
-
 .contactForm input:focus,
 .contactForm textarea:focus {
   border-color: #999999;
 }
-
 
 .contactForm textarea {
   resize: vertical;
 
   min-height: 150px;
 }
-
 
 .contactForm button {
   align-self: center;
@@ -625,31 +601,39 @@ nav a:hover {
     opacity 0.2s ease;
 }
 
-
 .contactForm button:hover {
   transform: translateY(-2px);
 
   opacity: 0.8;
 }
 
+.googleContactForm {
+  display: block;
+
+  width: min(100%, 900px);
+
+  height: 900px;
+
+  margin: 0 auto;
+
+  border: 0;
+
+  background: white;
+}
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 1000px) {
-
   .teamGrid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
 
     gap: 15px;
   }
-
 }
 
-
 @media (max-width: 700px) {
-
   nav {
     height: auto;
 
@@ -664,11 +648,21 @@ nav a:hover {
     justify-content: flex-end;
   }
 
-
   nav a {
     font-size: 16px;
   }
 
+  .navLogo {
+    flex-basis: 100%;
+
+    justify-content: flex-start;
+
+    margin-right: 0;
+  }
+
+  .navLogo img {
+    width: 115px;
+  }
 
   .heroSection {
     margin-top: 65px;
@@ -678,36 +672,29 @@ nav a:hover {
     padding: 90px 25px 70px;
   }
 
-
   .heroContent h1 {
     letter-spacing: -2px;
   }
-
 
   .heroFeatures li {
     font-size: 21px;
   }
 
-
   .subscribeButtons {
     flex-direction: column;
   }
-
 
   .subscribeButton {
     width: 100%;
   }
 
-
   .teamSection {
     padding: 80px 20px;
   }
 
-
   .teamContent h2 {
     margin-bottom: 45px;
   }
-
 
   .teamGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -715,18 +702,15 @@ nav a:hover {
     gap: 15px;
   }
 
-
   .teamButton {
     min-height: 70px;
 
     font-size: 22px;
   }
 
-
   .pageBox {
     padding: 40px 20px 70px;
   }
-
 
   .pageBox h1 {
     font-size: 55px;
@@ -734,18 +718,15 @@ nav a:hover {
     margin-bottom: 30px;
   }
 
-
   .aboutText p {
     font-size: 21px;
 
     line-height: 1.5;
   }
 
-
   .peopleBox {
     padding: 35px 20px 50px;
   }
-
 
   .peopleBox h1 {
     font-size: 60px;
@@ -753,28 +734,23 @@ nav a:hover {
     margin-bottom: 15px;
   }
 
-
   .peopleBox p {
     font-size: 20px;
 
     line-height: 1.5;
   }
 
-
   .rolesBox {
     margin-top: 25px;
   }
-
 
   .rolesBox h2 {
     font-size: 26px;
   }
 
-
   .contactPage {
     padding: 35px 20px 60px;
   }
-
 
   .contactPage h1 {
     font-size: 55px;
@@ -782,49 +758,9 @@ nav a:hover {
     margin-bottom: 15px;
   }
 
-
   .contactEmail {
     font-size: 21px;
 
-    margin-bottom: 35px;
+    margin-bottom: 12px;
   }
-
-}
-
-.contactPage {
-  width: min(94%, 1000px);
-  margin: 0 auto;
-  padding: 85px 0 40px;
-  text-align: center;
-}
-
-.contactPage h1,
-.contactEmail,
-.contactFormIntro {
-  font-weight: bold;
-}
-
-.contactPage h1 {
-  margin: 0 0 14px;
-}
-
-.contactEmail {
-  margin: 0 0 12px;
-}
-
-.contactEmail a {
-  color: inherit;
-}
-
-.contactFormIntro {
-  margin: 0 0 25px;
-}
-
-.googleContactForm {
-  display: block;
-  width: min(100%, 900px);
-  height: 900px;
-  margin: 0 auto;
-  border: 0;
-  background: white;
 }
